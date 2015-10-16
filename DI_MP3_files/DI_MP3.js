@@ -1,12 +1,8 @@
 // Created by iWeb 3.0.4 local-build-20150919
 
-function writeMovie1()
-{detectBrowser();if(windowsInternetExplorer)
-{document.write('<object id="id2" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="430" height="16"><param name="src" value="Media/01%20Amoeba.mp3" /><param name="controller" value="true" /><param name="autoplay" value="false" /><param name="scale" value="tofit" /><param name="volume" value="100" /><param name="loop" value="false" /></object>');}
-else if(isiPhone)
-{document.write('<object id="id2" type="video/quicktime" width="430" height="16"><param name="src" value="Media/01%20Amoeba.mp3"/><param name="controller" value="true"/><param name="scale" value="tofit"/></object>');}
-else
-{document.write('<object id="id2" type="video/quicktime" width="430" height="16" data="Media/01%20Amoeba.mp3"><param name="src" value="Media/01%20Amoeba.mp3"/><param name="controller" value="true"/><param name="autoplay" value="false"/><param name="scale" value="tofit"/><param name="volume" value="100"/><param name="loop" value="false"/></object>');}}
+function writeMovie1() {
+  document.write('<audio id="id2" style="width:430px" src="Media/01%20Amoeba.mp3" preload="auto" controls><p>Your browser does not support the <code>audio</code> element.</p></audio>');
+}
 setTransparentGifURL('Media/transparent.gif');function applyEffects()
 {var registry=IWCreateEffectRegistry();registry.registerEffects({shadow_0:new IWShadow({blurRadius:10,offset:new IWPoint(4.2426,4.2426),color:'#000000',opacity:0.750000})});registry.applyEffects();}
 function hostedOnDM()
