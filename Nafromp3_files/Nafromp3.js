@@ -1,18 +1,8 @@
 // Created by iWeb 3.0.4 local-build-20150919
 
 function writeMovie1() {
-  detectBrowser();
-  if (windowsInternetExplorer) {
-    // document.write('<object id="id2" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="576" height="16"><param name="src" value="Media/Slippin.mp3" /><param name="controller" value="true" /><param name="autoplay" value="false" /><param name="scale" value="tofit" /><param name="volume" value="100" /><param name="loop" value="false" /></object>');
-    document.write('<audio id="id2" width="576" height="16" src="Media/Slippin.mp3" preload="auto" controls><p>Your browser does not support the <code>audio</code> element.</p></audio>');
-  } else if (isiPhone) {
-    // document.write('<object id="id2" type="video/quicktime" width="576" height="16"><param name="src" value="Media/Slippin.mp3"/><param name="controller" value="true"/><param name="scale" value="tofit"/></object>');
-    document.write('<audio id="id2" width="576" height="16" src="Media/Slippin.mp3" preload="auto" controls><p>Your browser does not support the <code>audio</code> element.</p></audio>');
-  } 
-  else {
-    // document.write('<object id="id2" type="video/quicktime" width="576" height="16" data="Media/Slippin.mp3"><param name="src" value="Media/Slippin.mp3"/><param name="controller" value="true"/><param name="autoplay" value="false"/><param name="scale" value="tofit"/><param name="volume" value="100"/><param name="loop" value="false"/></object>');
-    document.write('<audio id="id2" width="576" height="16" src="Media/Slippin.mp3" preload="auto" controls><p>Your browser does not support the <code>audio</code> element.</p></audio>');
-  }
+  // detectBrowser();
+  document.write('<audio id="id2" style="width:576px" src="Media/Slippin.mp3" preload="auto" controls><p>Your browser does not support the <code>audio</code> element.</p></audio>');
 }
 setTransparentGifURL('Media/transparent.gif');
 
