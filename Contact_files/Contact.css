@@ -1,5 +1,5 @@
 .style_SkipStroke {
-    background: transparent;
+    background: transparent url(backgroundimage_2_1.png) no-repeat scroll center center;
     opacity: 1.00;
 }
 .style_SkipStrokeSkipFillSkipOpacity {
@@ -8,7 +8,7 @@
     background: transparent;
     opacity: 1.00;
 }
-.graphic_shape_layout_style_default_External_630_49 {
+.graphic_shape_layout_style_default_External_716_3429 {
     position: relative;
 }
 .graphic_shape_layout_style_default {
